@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rachel's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/836a943e18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+
+    <header>
+    <nav class="pretty-nav">
+      <div class="logo">Rachel Lim</div>
+      <button onclick="this.classList.toggle('collapsed');document.getElementById('nav-links').classList.toggle('expanded')">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>    
+  </header>  
+    
+    <main>
+      <section id="landing-page" class="landing-page">
+        <div class="container">
+          <div class="main-message">
+            <h2>Hi, I'm Rachel. I'm a</h2>
+            <h3>Computer Science Student</h3>
+            <p>passionate about web development and all things tech.</p>
+            <div class="intro-btn">
+              <div class="cta">
+                <a href="#contact" class="btn">Contact me</a>
+              </div>
+              <div class="cta">
+                <a href="#projects" class="btn">My Projects</a>
+              </div>
+            </div>
+            <div>
+              <a href="#about" class="scroll-down">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-img">
+            <img
+              src="./assets/img/pic.JPG"
+              alt="Rachel"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-text-box">
+            <h2>Hello <span class="wave">👋</span> </h2>
+
+            <p>
+              My name is Rachel Lim. I am a first year student at NUS majoring in
+              Computer Science. 
+            </p>
+            <p>
+              As a web developer, I ensure that the web pages are optimised for maximum speed and scalability,
+              without compromising its functionality and aesthetic design. I also make sure that the designs 
+              are responsive so that it works well for different types of devices.
+            </p>
+            <p>
+              I am a team oriented person and I like to learn new things. During my free time, I like to new
+              things, regardless if it's programming related or not. Other activities I enjoy are
+              any sort of sports, playing the guitar and obsessing over cats.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="title-heading">
+          <h2>PROJECTS</h2>
+          <p>Here are some of my projects to showcase my skillset.</p>
+        </div>
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="./assets/img/app1.png" />
+          </div>
+          <div class="project-description">
+            <h2>Recipe Finder</h2>
+            <p>
+              This is a recipe finder web application that returns recipes
+              that matches the requested ingredient. It is built with the 
+              MealDB API(an open source data of recipes from around the world)
+              and Vanilla Javascript. It is also responsively designed for both
+              PC and mobile display.
+            </p>
+            <a href="https://github.com/rachels-archive/recipe-finder-js" class="project-link" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
+            >
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-description has-margin-right">
+            <h2>Budget Planner</h2>
+            <p>
+              This is a straightforward expense tracker/ budget tracker web
+              application. It helps track budget, spendings, balance and history
+              of spendings. It is built using ReactJS and the Context API, which
+              makes global variables that can be passed around between components.
+            </p>
+            <a href="https://github.com/rachels-archive/react-budget-tracker" class="project-link" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
+            >
+          </div>
+          <div class="project-img">
+            <img src="./assets/img/app2.png" />
+          </div>
+        </div>
+        </div>
+        <hr />
+      </section>
+
+
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="title-heading">
+            <h2>MY SKILLSETS</h2>
+            <p>
+              Here are some of my skills which are backed by the projects displayed in my portfolio.
+            </p>
+          </div>
+          <div class="service-tiers">
+            <div class="tier-item">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <h2>Web Development</h2>
+              <p>
+                I build responsive functional websites and web applications
+                that are visually appealing and user friendly. 
+              </p>
+            </div>
+            <div class="tier-item">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <h2>UI Design</h2>
+              <p>
+                I have basic knowledge of building website wireframes and mockups using Figma.
+              </p>
+            </div>
+            <div class="tier-item">
+              <i class="fa fa-file-code-o" aria-hidden="true"></i>
+              <h2>Data Visualisation</h2>
+              <p>
+                I help simplify and convey informaton by using visualing data by using
+                technologies such as Chart.js.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+      
+      <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          Feel free to reach out to me regarding job opportunities or my work. 
+          Have a nice day!
+        </p>
+        <p>
+          <i
+            >For job opportunities, begin your subject with
+            <strong>"Job offer"</strong></i
+          >
+        </p>
+        <div class="container">
+          <p>
+            <a href="mailto:millehar@protonmail.com"
+              ><i class="fas fa-envelope-open"><span> millehcar@protonmail.com</span></i></a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/rachels-archive" target="_blank">
+              <i class="fa fa-github"><span> GitHub</span></i></a
+            >
+          </p>
+          
+        </div>
+        <hr />
+      </section>
+      <footer>
+        <div class="footer-nav">
+          <a href="#landing-page" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </div>
+        <div class="footer-coded-by">
+          <p>
+            <i class="fas fa-code"></i> by Rachel &copy; 2022
+          </p>
+        </div>
+    </main>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
